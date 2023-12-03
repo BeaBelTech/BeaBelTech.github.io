@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #111d60;
+  opacity: 0.85;
+}
+html, body {
+  width: auto;
+  max-width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+} 
+#conteudo {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  
+}
+
+#forms {
+  align-items: end;
+  justify-content: center;
+  padding-right: 0rem;
+}
+div {
+  width: 101%;
+	display: flex;
+  align-items: center;
+}
+img {
+  max-width: 100vw;
+  height: 100%;
+ 
+}
+
+h1,
+h2, h3 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 1.2rem;
+  text-align: center;
+
+}
+
+
+h2::before {
+  display: block;
+}
+
+.form {
+  width: 600px;
+  max-width: 32rem;
+  font-size: 1rem;
+}
+
+.form label,
+.form input,
+.form textarea,
+.form button {
+  display: block;
+  width: 100%;
+}
+
+.form label {
+  color: #fff;
+  font-weight: 450;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.form input,
+.form textarea {
+  background-color: #e0e0e0;
+  padding: 0.8rem;
+  margin-bottom: 1.8rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: border-color, box-shadow 0.2s;
+  width: 100%;
+  min-width: 300px;
+  outline: none;
+}
+
+.form textarea {
+  min-height: 11.5rem;
+  resize: vertical;
+
+}
+
+.form input:hover,
+.form input:focus,
+.form textarea:hover,
+.form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #4dc8ff;
+}
+
+.form button {
+  display: block;
+  padding: 1rem;
+  background: #383F85;
+  color: #fff;
+  font: inherit;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.form button:hover,
+.form button:focus {
+  outline: none;
+  background: #09d;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1130px) {
+  #img {
+    background-size: cover; /* Para cobrir todo o elemento #conteudo */
+    background-position: center; /* Posiciona a imagem no centro */
+    width: auto;
+    height: auto;
+    padding-left: 0rem;
+
+  }
+  #forms {
+    height: auto;
+    width: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    overflow: hidden;
+
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  
+}
+
+@media screen and (max-width: 1000px) {
+
+  #img {
+    display: none;
+  }
+  #conteudo {
+    padding: 5%;
+  
+  }
+  .form {
+    width: 100%;
+    height: 100%;
+    
+  }
+  .form label {
+    font-weight: 550;
+    color: #ffffff;
+  }
+  h1, h2, h3 {
+    font-size: 2rem;
+  }
+  html, body {
+    overflow: scroll;
+    /* Definindo a imagem como background */
+    background: url('Fundo blc.png');
+    background-size: cover; /* Para cobrir todo o elemento #conteudo */
+    background-position: center; /* Posiciona a imagem no centro */
+    width: 100%;
+    height: 100%;
+  }
+}
